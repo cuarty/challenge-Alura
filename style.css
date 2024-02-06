@@ -1,0 +1,251 @@
+body{
+    background-color: #F3F5FC;    
+    ;
+}
+
+ul{
+    display: inline-block;
+    
+}
+
+
+.col1{
+    height: 95vh;
+    width: 70%;
+    margin-top: 40px;
+    box-sizing: border-box;
+    padding-left: 2%;
+    
+}
+
+li textarea{ 
+    width: 70%;
+    height: 80%; 
+    border: none;
+    outline: none; 
+    font-family: inter;
+    font-size: 32px;
+    color:#0A3871;
+    background-color: #F3F5FC;
+    
+}
+
+textarea::placeholder{
+    color:#0A3871;
+    
+}
+
+.subfila{
+    margin-left: 15%;
+}
+
+#fila1-col1{
+    height: 14vh;
+}
+
+#fila2-col1{
+    height: 62vh; 
+      
+}
+
+#fila3-col1 {
+    height: 4vh;
+    font-family: inter;
+    font-size: 18px;   
+}
+
+#fila4-col1{
+    height: 15vh;
+}
+
+#fila4-col1 ul{
+    width: 100%;
+}
+
+#fila4-col1 li{      
+    display: inline-block;  
+    width: 40%;
+}
+
+#fila4-col1 button{
+    width: 90%;
+    height: 67px;
+    font-size: 18px;
+    margin-right: 24px;
+    border-radius: 24px;
+    border-color: #0A3871;
+}
+
+#botonEncriptar{
+    color: #D8DFE8;
+    background-color: #0A3871;
+}
+
+#botonDesencriptar{
+    color: #0A3871;
+    background-color: #D8DFE8;
+}
+
+.col2{
+    height: 95vh;
+    text-align: center;    
+    width: 30%;
+    align-items: center;
+    position: absolute;
+}
+
+.col2 div {
+    height: 95%;
+    background-color: white;
+    border-radius: 32px;
+    margin-top: 40px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+}
+
+
+#fila1-col2{
+    height: 85%;
+    margin-top: 30px;
+    position: relative;
+    text-align: center;
+}
+
+#textoRevelado{
+        max-width: 80%;
+        overflow: hidden;
+        word-wrap: break-word;
+        margin: 40px auto 0px auto;
+        padding-top: 50px;
+}
+
+
+.col2 img{
+    margin-top: 80px;
+    width: 100%;
+}
+
+.col2 h1{
+    text-align: center;
+    margin: 0 auto;
+    font-size: 28px;
+    font-weight: 800;
+    font-family: inter;
+}
+
+.col2 p{
+    text-align: center;    
+    max-width: 80%;
+    overflow: hidden;
+    word-wrap: break-word;
+    margin: 20px auto 0px auto;
+    padding-bottom: 30px;
+    font-size: 20px;    
+    font-family: inter;
+}
+
+#parrafo{
+    margin-top: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+
+#fila2-col2{
+    height: 15%;
+    text-align: center;
+}
+
+#fila2-col2 button{
+    width: 70%;
+    height: 67px;
+    font-size: 18px;
+    color: #0A3871;
+    border-color: #0A3871;
+    background-color: white;
+    border-radius: 24px;
+    display: none;
+}
+
+@media screen and (min-width : 769px) and (max-width : 1024px){
+    ul{
+        display: inline;
+    }
+
+    .div1{
+        margin-top: 25px;
+        margin-left: 25px;
+    }
+    .col1{
+        width: 100%;
+
+    }
+
+    #fila4-col1 li{
+        width: 40%;
+    } 
+
+    .col2{
+        height: auto;
+        width: 100%;
+    }
+
+    .col2 div {
+        margin-top: 10px;
+        margin-left: 40px;
+    }
+
+    .col2 img{
+        display: none;
+    }
+
+    #fila2-col2 button{
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+    
+}
+
+@media screen and (max-width : 768px){
+
+    ul{
+        display: inline;
+    }
+
+    
+
+    .col1{
+        width: 100%;
+
+    }
+
+    #fila4-col1 li{
+        display: inline;
+        width: 90%;
+    } 
+
+    .col1{
+        height: 600px;
+    }
+
+    .col2{
+        height: auto;
+        width: 100%;
+    }
+
+    .col2 div {
+        margin-top: 10px;
+        margin-left: 40px;
+    }
+
+    .col2 img{
+        display: none;
+    }
+
+    #fila2-col2 button{
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+    
+}

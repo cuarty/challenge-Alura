@@ -1,6 +1,5 @@
 body{
-    background-color: #F3F5FC;    
-    ;
+    background-color: #F3F5FC; 
 }
 
 ul{
@@ -68,7 +67,7 @@ textarea::placeholder{
 }
 
 #fila4-col1 button{
-    width: 90%;
+    width: 95%;
     height: 67px;
     font-size: 18px;
     margin-right: 24px;
@@ -117,6 +116,10 @@ textarea::placeholder{
         word-wrap: break-word;
         margin: 40px auto 0px auto;
         padding-top: 50px;
+}
+
+#muñeco{
+    margin: 0 auto;
 }
 
 
@@ -182,18 +185,24 @@ textarea::placeholder{
 
     }
 
+    .subfila{
+        margin-left: 40px;
+    }
+
     #fila4-col1 li{
-        width: 40%;
+        width: 45%;
     } 
 
     .col2{
+        position: relative;
         height: auto;
         width: 100%;
     }
 
     .col2 div {
         margin-top: 10px;
-        margin-left: 40px;
+        margin-left: 60px;
+        margin-right: 100px;
     }
 
     .col2 img{
@@ -213,16 +222,41 @@ textarea::placeholder{
         display: inline;
     }
 
-    
-
+    .div1{
+        margin-top: 25px;
+        margin-left: 25px;
+    }
     .col1{
         width: 100%;
+        margin-bottom: 150px;
 
     }
 
+    .subfila{
+        margin-left: 40px;
+    }
+
+    #fila1-col1{
+        height: 14vh;
+    }
+
+    #fila2-col1{
+        height: 47vh; 
+          
+    }
+    
+    #fila3-col1 {
+        height: 4vh;  
+    }
+    
+    #fila4-col1{
+        height: 19vh;
+    }
+
     #fila4-col1 li{
-        display: inline;
-        width: 90%;
+        display: inline-block;
+        width: 80%;
+        margin-bottom: 10px;
     } 
 
     .col1{
@@ -230,14 +264,29 @@ textarea::placeholder{
     }
 
     .col2{
+        padding-top: 100px;
+        position: relative;
         height: auto;
         width: 100%;
     }
 
-    .col2 div {
-        margin-top: 10px;
-        margin-left: 40px;
+    .col2 div {        
+        margin-top: 0px;
+        margin-left: 60px;
+        margin-right: 120px;
     }
+
+    #muñeco{
+        margin: 0 auto;
+    }
+
+    #fila1-col2{
+        height: 85%;
+        margin-top: 0px;
+        position: relative;
+        text-align: center;
+    }
+
 
     .col2 img{
         display: none;

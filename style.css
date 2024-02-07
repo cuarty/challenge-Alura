@@ -13,7 +13,6 @@ ul{
     width: 70%;
     margin-top: 40px;
     box-sizing: border-box;
-    padding-left: 2%;
     
 }
 
@@ -86,6 +85,7 @@ textarea::placeholder{
 }
 
 .col2{
+    margin-top: 40px;
     height: 95vh;
     text-align: center;    
     width: 30%;
@@ -93,11 +93,10 @@ textarea::placeholder{
     position: absolute;
 }
 
-.col2 div {
+.contenidoCol2 {
     height: 95%;
     background-color: white;
     border-radius: 32px;
-    margin-top: 40px;
     margin-right: 40px;
     margin-bottom: 40px;
 }
@@ -105,27 +104,31 @@ textarea::placeholder{
 
 #fila1-col2{
     height: 85%;
-    margin-top: 30px;
     position: relative;
     text-align: center;
 }
+
 
 #textoRevelado{
         max-width: 80%;
         overflow: hidden;
         word-wrap: break-word;
-        margin: 40px auto 0px auto;
+        margin: 0px auto 0px auto;
         padding-top: 50px;
+        display: none;
 }
 
 #muñeco{
     margin: 0 auto;
+    height: 95%;
+    align-content: center;
+    display: inline-grid;
 }
 
 
 .col2 img{
-    margin-top: 80px;
-    width: 100%;
+    margin: 0 auto;
+    width: 80%;
 }
 
 .col2 h1{
@@ -177,21 +180,50 @@ textarea::placeholder{
     }
 
     .div1{
-        margin-top: 25px;
-        margin-left: 25px;
+        width: 100vw;
+        height: 700px;
+        margin-top: 40px;
     }
-    .col1{
-        width: 100%;
 
-    }
+    .col1{
+        padding-left: 0px;
+        width: 100%;
+    }    
 
     .subfila{
-        margin-left: 40px;
+        margin-left: 10vw;
+    }
+
+    #fila1-col1 img{
+        margin-left: 5vw;
+    }
+
+    #fila1-col1 {
+        height: 100px;
+    }
+
+    #fila2-col1{
+        height: 450px;
+        width: 80vw; 
+          
+    }
+
+    #fila3-col1 {
+        height: 40px;
+        width: 80vw;  
+    }
+
+    li textarea {
+        width: 80vw;
+        height: 90%;
+        
+        font-size: 25px;
     }
 
     #fila4-col1 li{
         width: 45%;
     } 
+
 
     .col2{
         position: relative;
@@ -199,10 +231,13 @@ textarea::placeholder{
         width: 100%;
     }
 
-    .col2 div {
-        margin-top: 10px;
-        margin-left: 60px;
-        margin-right: 100px;
+    .col2 div {  
+        width: 80%;      
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-top: 0px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .col2 img{
@@ -212,6 +247,8 @@ textarea::placeholder{
     #fila2-col2 button{
         margin-top: 30px;
         margin-bottom: 50px;
+        height: 50px;
+        font-size: 18px;
     }
     
 }
@@ -224,8 +261,9 @@ textarea::placeholder{
 
     .div1{
         margin-top: 25px;
-        margin-left: 25px;
+        margin-left: 0px;
     }
+
     .col1{
         width: 100%;
         margin-bottom: 150px;
@@ -233,31 +271,50 @@ textarea::placeholder{
     }
 
     .subfila{
-        margin-left: 40px;
+        margin-left: 10vw;
     }
 
     #fila1-col1{
-        height: 14vh;
+        height: 80px;
+    }
+
+    #fila1-col1 img{
+        width: 100px;
     }
 
     #fila2-col1{
-        height: 47vh; 
+        height: 450px; 
           
+    }
+
+    li textarea {
+        width: 80vw;
+        height: 90%;
+        
+        font-size: 25px;
     }
     
     #fila3-col1 {
-        height: 4vh;  
+        height: 40px;
+        width: 80vw;  
     }
     
     #fila4-col1{
-        height: 19vh;
+        height: 150px;
     }
 
     #fila4-col1 li{
         display: inline-block;
-        width: 80%;
+        width: 80vw;
         margin-bottom: 10px;
     } 
+
+    #fila4-col1 button {
+        width: 80vw;
+        margin-right: 0px;
+        height: 50px;
+        font-size: 18px;
+    }
 
     .col1{
         height: 600px;
@@ -270,10 +327,13 @@ textarea::placeholder{
         width: 100%;
     }
 
-    .col2 div {        
+    .col2 div {  
+        width: 80%;      
+        padding-top: 10px;
+        padding-bottom: 10px;
         margin-top: 0px;
-        margin-left: 60px;
-        margin-right: 120px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     #muñeco{
@@ -282,7 +342,7 @@ textarea::placeholder{
 
     #fila1-col2{
         height: 85%;
-        margin-top: 0px;
+        margin-top: 30px;
         position: relative;
         text-align: center;
     }
@@ -295,6 +355,8 @@ textarea::placeholder{
     #fila2-col2 button{
         margin-top: 30px;
         margin-bottom: 50px;
+        height: 50px;
+        font-size: 18px;
     }
     
 }

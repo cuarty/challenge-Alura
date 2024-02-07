@@ -77,6 +77,7 @@ function desencriptarTexto(){
 function encriptar(){    
 
     document.getElementById("muñeco").style.display = "none";
+    document.getElementById("textoRevelado").style.display = "inline-block";
     document.querySelector("#fila2-col2 button").style.display = "inline";
 
     let elementoHTML = document.getElementById("textoRevelado");
@@ -88,6 +89,7 @@ function encriptar(){
 function desencriptar(){
 
     document.getElementById("muñeco").style.display = "none";
+    document.getElementById("textoRevelado").style.display="inline-block";
     document.querySelector("#fila2-col2 button").style.display = "inline";
 
     let elementoHTML = document.getElementById("textoRevelado");

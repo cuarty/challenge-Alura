@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+
+
 body{
     background-color: #F3F5FC; 
 }
@@ -21,7 +25,7 @@ li textarea{
     height: 80%; 
     border: none;
     outline: none; 
-    font-family: inter;
+    font-family: 'Inter', sans-serif;
     font-size: 32px;
     color:#0A3871;
     background-color: #F3F5FC;
@@ -48,7 +52,7 @@ textarea::placeholder{
 
 #fila3-col1 {
     height: 4vh;
-    font-family: inter;
+    font-family: 'Inter', sans-serif;
     font-size: 18px;   
 }
 
@@ -68,6 +72,7 @@ textarea::placeholder{
 #fila4-col1 button{
     width: 95%;
     height: 67px;
+    font-family: 'Inter', sans-serif;
     font-size: 18px;
     margin-right: 24px;
     border-radius: 24px;
@@ -77,11 +82,13 @@ textarea::placeholder{
 #botonEncriptar{
     color: #D8DFE8;
     background-color: #0A3871;
+    box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.3);
 }
 
 #botonDesencriptar{
     color: #0A3871;
     background-color: #D8DFE8;
+    box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.3);
 }
 
 .col2{
@@ -99,6 +106,7 @@ textarea::placeholder{
     border-radius: 32px;
     margin-right: 40px;
     margin-bottom: 40px;
+    box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.3);
 }
 
 
@@ -111,6 +119,7 @@ textarea::placeholder{
 
 #textoRevelado{
         max-width: 80%;
+        font-family: 'Inter', sans-serif;
         overflow: hidden;
         word-wrap: break-word;
         margin: 0px auto 0px auto;
@@ -136,7 +145,7 @@ textarea::placeholder{
     margin: 0 auto;
     font-size: 28px;
     font-weight: 800;
-    font-family: inter;
+    font-family: 'Inter', sans-serif;
 }
 
 .col2 p{
@@ -146,8 +155,8 @@ textarea::placeholder{
     word-wrap: break-word;
     margin: 20px auto 0px auto;
     padding-bottom: 30px;
-    font-size: 20px;    
-    font-family: inter;
+    font-size: 22px;    
+    font-family: 'Inter', sans-serif;
 }
 
 #parrafo{
@@ -166,12 +175,14 @@ textarea::placeholder{
 #fila2-col2 button{
     width: 70%;
     height: 67px;
+    font-family: 'Inter', sans-serif;
     font-size: 18px;
     color: #0A3871;
     border-color: #0A3871;
     background-color: white;
     border-radius: 24px;
     display: none;
+    box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.3);
 }
 
 @media screen and (min-width : 769px) and (max-width : 1024px){
@@ -216,7 +227,6 @@ textarea::placeholder{
     li textarea {
         width: 80vw;
         height: 90%;
-        
         font-size: 25px;
     }
 

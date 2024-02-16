@@ -11,9 +11,14 @@ function convertirTexto(){
 
 function encriptarTexto(){
     let listaDeCaracteres = convertirTexto();
+    let textoErroneo = false;
+    let acentuados = /[áéíóú]/;
+    let textoEncriptado;
     //Por medio de un for recorro la lista y si un caracter coincide con una encriptación, reemplazo su espacio de la lista con el encriptado;
     for(let i = 0; i< listaDeCaracteres.length; i++) {
-        if(listaDeCaracteres[i] == "a"){
+        if(listaDeCaracteres[i] >= "A" && listaDeCaracteres[i] <= "Z" || acentuados.test(listaDeCaracteres[i])){
+            textoErroneo = true;
+        } else if(listaDeCaracteres[i] == "a"){
             listaDeCaracteres[i]= "ai";
         } else if (listaDeCaracteres[i] == "e"){
             listaDeCaracteres[i]= "enter";
@@ -26,21 +31,31 @@ function encriptarTexto(){
         }
     }
 
-    let textoEncriptado = listaDeCaracteres.join("");
-
-    textoSalida = textoEncriptado;
-
+    if (textoErroneo == true){
+        textoEncriptado = "Recuerde que el texto a encriptar no debe contener mayúsculas ni acentos. Inténtelo de nuevo...";
+        textoSalida = "";
+    } else {
+        textoEncriptado = listaDeCaracteres.join("");
+        textoSalida = textoEncriptado;
+    }
+    
     return textoEncriptado;
+   
 }
 
 
 function desencriptarTexto(){
     let listaDeCaracteres = convertirTexto();
     let listaNuevaDeCaracteres = [];
+    let textoErroneo = false;
+    let acentuados = /[áéíóú]/;
+    let textoDesencriptado;
 
     //Con este for recorro la lista, en este caso, por medio de condicionales corroboro que se cumpla la secuencia de encriptación, y si es así lo reemplazo por la letra correspondiente en una nueva lista;
     for(let i = 0; i< listaDeCaracteres.length; i++){
-        if (listaDeCaracteres[i] == "a" && listaDeCaracteres[i + 1] == "i"){
+        if(listaDeCaracteres[i] >= "A" && listaDeCaracteres[i] <= "Z" || acentuados.test(listaDeCaracteres[i])){
+            textoErroneo = true;
+        } else if (listaDeCaracteres[i] == "a" && listaDeCaracteres[i + 1] == "i"){
             listaNuevaDeCaracteres.push("a");
             listaDeCaracteres.splice(i, 2);
             i=i-1;
@@ -66,9 +81,13 @@ function desencriptarTexto(){
         }
     }
 
-    let textoDesencriptado = listaNuevaDeCaracteres.join("");
-
-    textoSalida = textoDesencriptado;
+    if (textoErroneo == true){
+        textoDesencriptado = "Recuerde que el texto a encriptar no debe contener mayúsculas ni acentos. Inténtelo de nuevo...";
+        textoSalida = "";
+    } else {
+        textoDesencriptado = listaNuevaDeCaracteres.join("");
+        textoSalida = textoDesencriptado;
+    }
 
     return textoDesencriptado;
 }

@@ -94,7 +94,7 @@ function encriptar(){
 
     let elementoHTML = document.getElementById("textoRevelado");
     let imagen = document.createElement("img");
-    imagen.src = "imagenes/error.jpg";
+    imagen.src = "imagenes/error-encriptar.jpg";
 
     verificarTexto();
     
@@ -120,7 +120,7 @@ function desencriptar(){
     let elementoHTML = document.getElementById("textoRevelado");
 
     let imagen = document.createElement("img");
-    imagen.src = "imagenes/error.jpg";
+    imagen.src = "imagenes/error-desencriptar.jpg";
 
     verificarTexto();
     

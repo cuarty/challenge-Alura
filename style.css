@@ -250,8 +250,12 @@ textarea::placeholder{
         margin-right: auto;
     }
 
-    .col2 img{
+    #muñeco img{
         display: none;
+    }
+
+    #textoRevelado{
+        padding-top: 25px;
     }
 
     #fila2-col2 button{
@@ -293,7 +297,7 @@ textarea::placeholder{
     }
 
     #fila2-col1{
-        height: 70vw; 
+        height: 70vw;
           
     }
 
@@ -358,8 +362,13 @@ textarea::placeholder{
     }
 
 
-    .col2 img{
+    #muñeco img{
         display: none;
+    }
+
+    #textoRevelado{
+        padding-top: 0px;
+        padding-bottom: 0px;
     }
 
     #fila2-col2 button{
